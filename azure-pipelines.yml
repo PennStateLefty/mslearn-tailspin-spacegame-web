@@ -60,7 +60,7 @@ jobs:
 
 - job: Follow-up
   dependsOn: Build
-  condition: success()
+  condition: succeeded()
   steps:
   - bash: |
       echo "The build succeeded, this is a step in the follow-up job" 
