@@ -58,7 +58,7 @@ jobs:
     displayName: 'Publish Artifact: drop'
     condition: succeeded()
 
-- job: Follow-up
+- job: RunOnSucceed
   dependsOn: Build
   condition: succeeded()
   steps:
